@@ -513,7 +513,7 @@ OutputIt basic_printf_context<OutputIt, Char>::format() {
         t = it != end ? *it : 0;
         convert_arg<long long>(arg, t);
       } else {
-        convert_arg<long>(arg, t);
+        convert_arg<long long>(arg, t);
       }
       break;
     case 'j':
